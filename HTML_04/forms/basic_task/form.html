@@ -5,15 +5,16 @@
     <title>Document</title>
     <style>
         table {
-            table-layout: fixed;
+            table-layout: fixed; 
         }
+
     </style>
 </head>
 <body>
 <form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">   
-    <table width='700px' border="0" >
+    <table width='700px' border="0">
         <tr>
-            <td>
+            <td valign="top">
                 <h4>Простая форма поиска с вариантами:</h4>
                 <fieldset>
                     <legend>Строка поиска</legend>
@@ -27,7 +28,7 @@
             </td>
         </form>
 <form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">            
-            <td>
+            <td valign="top">
                 <h4>Простая форма поиска с вариантами:</h4>
                 <fieldset>
                     <legend>Строка поиска</legend>
@@ -44,7 +45,7 @@
         </tr>
         <tr>
 <form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">
-            <td>
+            <td valign="top">
                 <h4>Простая форма авторизации:</h4>
                 <fieldset>
                     <legend>Авторизация</legend>
@@ -59,7 +60,7 @@
             </td>
         </form>
 <form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">
-            <td>
+            <td valign="top">
                 <h4>Опрос(голосование):</h4>
                 <fieldset>
                     <legend>Как вам?</legend>
@@ -73,6 +74,8 @@
                     <br> 
                     <input type="hidden" name="date_voite" value="2013.12.31">
                     <input type="submit"><br>
+                    <em>Есть скрытое поле<br>
+                    name=date_voite, value="2013.12.31"</em>
                     
                 </fieldset>
             </td>
@@ -80,19 +83,22 @@
         </tr>
         <tr>
 <form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">
-            <td>
+            <td valign="top">
                 <h4>Отзыв:</h4>
                 <fieldset>
                     <legend>Оставьте Ваш отзыв</legend>
                     <input name="name" required><sup>*</sup> Имя <br>
                     <input type="email" name="name" required><sup>*</sup> e-mail <br>
                     <textarea placeholder="Форма отправки" name="text_area" cols="20" rows="2" ></textarea><br>
-                    <input type="submit" value="Отправить">
+                    <input type="submit" value="Отправить"><br>
+                    <em>* - обязательное поле<br>
+                    поле email - с проверкой<br>
+                    метод POST</em>
                 </fieldset>
             </td>
         </form>
 <form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">
-            <td>
+            <td valign="top">
                 <h4>Выпадающий и мульти списки:</h4>
                 <fieldset>
                     <legend>Города РБ</legend>
@@ -120,7 +126,7 @@
         </tr>
         <tr>
 <form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">
-            <td>
+            <td valign="top">
                 <H4>Загрузка файла на сервер:</H4>
                 <fieldset>
                     <legend>Upload</legend>
@@ -129,11 +135,15 @@
                     Срок хранения(года):<br>
                     <input size="3" type="text">
                     <input type="submit" value="Загрузить">
+                    <em>Метод POST<br>
+                    В теге form испольщуйте атрибут<br>
+                    enctype="multipart/form-data" для отправки<br>
+                    файла на сервер</em>
                 </fieldset>
             </td>
         </form>
 <form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">
-            <td>
+            <td valign="top">
                 <h4>Валидация данных HTML5:</h4>
                 <fieldset>
                     <legend>Строка поиска</legend>
