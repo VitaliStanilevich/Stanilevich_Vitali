@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form action="http://fe.it-academy.by/TestForm.php " method="POST" enctype="multipart/form-data">
+        
+   <fieldset>
+        <legend>Test</legend>
+        <label for='Test'>
+            Your name
+            <!-- <input type="text">  это один из спосбов-->
+        </label>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat dolores voluptates pariatur ipsum quis blanditiis perspiciatis, neque harum animi, aliquam cumque facilis dolore quia adipisci maxime, soluta distinctio mollitia incidunt.
+       </p>
+       <input type="text" id="Test">
+
+       <input type="text" tabindex="4">
+       <input type="text" tabindex="3">
+       <input type="text" tabindex="2">
+       <input type="text" tabindex="1">
+
+   </fieldset>
+   <fieldset>
+       <legend>checkbox</legend>
+       <input type="checkbox" name="check[]" value="check1">
+       <input type="checkbox" name="check[]" value="check2">
+       <input type="checkbox" name="check[]" value="check3">
+       <input type="checkbox" name="check[]" value="check4">
+       <input type="checkbox" name="check[]" value="check5">
+       <input type="checkbox" name="check[]" value="check6">
+   </fieldset>
+
+   <fieldset>
+    <legend>radio</legend>
+    <input type="radio" name="radio" value="radio1">
+    <input type="radio" name="radio" value="radio2">
+    <input type="radio" name="radio" value="radio3">
+
+    <input type="radio" name="radio1" value="radio4">
+    <input type="radio" name="radio1" value="radio5">
+    <input type="radio" name="radio1" value="radio6">
+    </fieldset>
+
+    <fieldset>
+        <legend>email</legend>
+        <input type="email" name="email">
+    </fieldset>
+
+    <fieldset>
+        <legend>file</legend>
+        <input type="file" name="file">
+    </fieldset>
+
+    <fieldset>
+        <legend>textarea</legend>
+        <textarea name="text"  cols="30" rows="10"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>select</legend>
+        <select name="select" size="4" multiple>
+            <option value="sel1">sel1</option>
+            <option value="sel2">sel2</option>
+            <option value="sel3">sel3</option>
+            <option value="sel4">sel4</option>
+            <option value="sel5">sel5</option>
+            
+        </select>
+
+    </fieldset>
+
+    <input type="number" min="10" max="100" step="20">
+
+    <input type="text" pattern="[0-9]{6,10}">
+
+    <table width='700px' border="1" >
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="search" maxlength="10">
+                    <input type="submit" value="Искать">
+                </fieldset>  
+            </td>
+            <td>
+                <fieldset>
+                    <h4>Простая форма поиска с вариантами:</h4>
+                    <legend>Строка поиска</legend>
+                    <input type="search" autofocus required>*
+                    <input type="submit" value="Искать">
+                    <br>
+                    <input type="radio" name="radio" value="на сайте"> на сайте 
+                    <input type="radio" name="radio" value="в google"> в google
+                    <br>
+                    
+                    <!-- <em>Длина запроса не более 10 символов</em>       -->
+                </fieldset> 
+            </td>
+        </tr>
+
+    <input type="submit">
+
+
+
+
+
+</form>
+</body>
+</html>
