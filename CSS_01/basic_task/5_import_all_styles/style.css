@@ -1,0 +1,2 @@
+@import url(../3_link_style_print/my_style_for_print.css) print;
+@import url(../4_import_style/link_to_style.css) screen;

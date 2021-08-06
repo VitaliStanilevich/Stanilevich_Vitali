@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* @import url(style.css); */
+        body {
+            max-width: 620px;
+            margin-left: 50px;  
+        }
+        .right{
+            float: right;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p><img src="../picture/Icon-Python.png" ALT="python" title="Логотип python" class="right"> </p>
+    <h1 >HOW-TO: Программа на Python, Часть 1</h1>
+    <ul>
+        <li><em><a href='python1_style.html'>Программа на Python &#8212 часть 1 </a></em></li>
+        <li><em><a href='python2_style.html'>Программа на Python &#8212 часть 2 </a></em></li>
+        <li><em><a href='python3_style.html'>Программа на Python &#8212 часть 3 </a></em></li>
+    </ul>   
+    <a name='content'></a>
+    <h2>Содержание</h2> 
+    <h3>HOW-TO: Программа на Python, Часть 1</h3> 
+    <ul>  
+        <li><a href='#First program'>Наша первая программа </a></li>
+        <li><a href='#For'>Пример цикла For </a></li>
+    </ul>
+    <p>Из множества существующих языков программирования Python — один из самых лёгких в изучении.
+    Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в
+    состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка
+    для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей —
+    программирование графических интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо
+    сейчас.</p>
+    <a name='First program'></a>
+    <h2>Наша первая программа</h2>
+    <a href='#content'>К содержанию </a>
+    <p>Наберем код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберемся, что делает каждая<br> 
+    строка и пойдем дальше.</p>
+    <p>Введите эти 4 строки:</p>
+    <code>
+    #!/usr/bin/env python<br>
+    print 'Hello. I am a python program.'<br>
+    name = raw_input("What is your name?")<br>
+    print "Hello there, " + name + "!"</code>
+    <p>Это всё. Сохраните файл как <strong> hello.py </strong> в любом месте. Я предлагаю сохранить его в папке
+    <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать программу на
+    Python. Для запуска программы нужно сделать её файл исполняемым. Для этого введите в терминале</p>
+    <h3><code><em><b><u>chmod +x hello.py</u></b></em></code></h3>
+    <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+    <code>
+        greg@earth:~/python_examples$ ./hello.py<br>
+        Hello. I am a python program.<br>
+        What is your name? Ferd Burphel<br>
+        Hello there, Ferd Burphel!<br>
+        greg@earth:~/python_examples$
+    </code>
+    <p>Вот и все.</p>
+    <a name='For'></a>
+    <h2>Пример цикла For</h2>
+    <a href='#content'>К содержанию </a>
+    <p>Теперь давайте рассмотрим пример прогармирования цикла. Запустите текстовый редактор и 
+    наберите следующую программу:</p>
+    <pre>
+#!/usr/bin/env python
+for cntr in range(0,10):
+    print cntr
+    </pre>
+    <p><em>Не забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В Python для
+    указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках
+    программирования, а отступы.</p>
+    <table width=100%>
+        <tr>
+            <td align="left">
+                <a href="#"><img src="../picture/prev.png" alt="prev" title='Предыдущая страница'></a> 
+            </td>
+            <td align="center">    
+                <a href="#content"><img src="../picture/home.png" alt="home" title='К содержанию'></a>
+            </td>
+            <td align='right'>
+                <a href="python2_style.html"><img src="../picture/next.png"alt="next" title='Следующая страница' ></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

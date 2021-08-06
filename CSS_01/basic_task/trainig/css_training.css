@@ -1,0 +1,24 @@
+body{
+    height: 10000px;
+}
+h1{
+    color: red; 
+    text-align: center; 
+    font-style: italic;
+}
+p{
+    color: royalblue;
+}
+#ccc{
+    color: rgb(0, 255, 85);
+}
+.bbb{
+    color: brown;
+    text-align: right;
+}
+.aaa{
+    text-align: center;
+}
+div span{
+    color: red;
+    
