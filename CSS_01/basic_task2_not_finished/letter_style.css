@@ -1,0 +1,16 @@
+body{
+    font-size: large;
+}
+h1 
+    {font-size: 17px;
+}
+header {
+    text-align: right;   
+}
+h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+}
+article {
+    font-family: 'Caveat', cursive;
+}
